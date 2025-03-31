@@ -1,0 +1,219 @@
+@charset "UTF-8";
+   
+@font-face {
+font-family:Faster;
+src:url(/static/css/fontes/FasterOne-Regular.ttf) format(TrueType);
+}
+
+
+body{
+    background-color: #011627;
+    color: #FDFFFC;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0%;
+    }
+
+header{
+    background-color: #F71735;
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.434);
+
+}
+
+header > h1{
+    font-family: Faster;
+    font-weight: normal;
+    font-size: 50px;
+    padding-top: 0%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header > nav{
+    text-align: start;
+    text-indent: 20px;
+}
+
+.menu{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #FDFFFC;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.menu:hover{
+    background-color: #720d1a7c;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+
+}
+
+.user{
+    margin-right: 2vw;
+    text-decoration: none;
+}
+
+
+table{
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    background-color: #F71735;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 10px 10px  5px rgba(0, 0, 0, 0.434);
+    width: 800px;
+}
+
+.form-group{
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    background-color: #F71735;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    width: 576.5px;
+    box-shadow: 10px 10px  5px rgba(0, 0, 0, 0.434);
+}
+
+input{
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+    border-bottom-style: none;
+    border-style: none;
+}
+
+
+
+.btn-primary{
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #FF9F1C;
+    color: #011627;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    }
+
+.btn-aut{
+    display: flex;
+    background-color: #FF9F1C;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: 1px   ;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+
+}
+
+.btn-secondary{
+    text-decoration: none;
+    color: #011627;
+}
+
+.card-body{
+    display: inline-block;
+    background-color: #FDFFFC;
+    color: black;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    border-top: auto;
+    border-left: auto;
+    padding: 30px;
+    margin-top: 5vw;
+    border-radius: 5px;
+}
+
+.btn{
+    display: block;
+    
+}
+
+.btn-edit{
+    display: inline-flex;
+    background-color: #FF9F1C;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: 1px   ;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+
+}
+.btn-del{
+    display: inline-flex;
+    background-color: #FF9F1C;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: 1px   ;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+
+}
+
+.btn-edit > a{
+    text-decoration: none;
+    color: #011627;
+
+}
+
+.btn-del > a{
+    text-decoration: none;
+    color: #011627;
+
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #FF9F1C;
+    font-size: 15px;
+    color: #FDFFFC;
+}

@@ -1,0 +1,60 @@
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="{% static 'css\styleforms.css' %}">
+</head>
+<body>
+    <header>
+        <h1>VRUM VRUM CARROS</h1>
+        <p>Desde 2024 movendo os seus sonhos!</p>
+        <nav>
+            {% if user.is_authenticated %}
+                <a class="user">Olá {{user}}!</a>
+                <a class="menu" href="{% url 'new_car' %}">Cadastro de Carros</a>
+            {% endif %} 
+            
+            {% if not user.is_authenticated %}
+                <a class="menu" href="{% url 'register' %}">Registre-se</a>
+                <a class="menu" href="{% url 'login' %}">Login</a>
+            {% endif %}
+
+            <a class="menu" href="{% url 'cars_list' %}">Home</a>
+            <a class="menu" href="#">Fale conosco</a>
+
+            {% if user.is_authenticated %}
+                <a class="menu" href="{% url 'logout' %}">Logout</a>
+            {% endif %}
+
+          
+        </nav>
+    </header>
+
+    <div class="card-body">
+        <p>Tem certeza que deseja deletar o carro <strong>{{object.brand}} {{object.model}}</strong></p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="btn">
+                <div class="btn-del">
+                    <input type="submit" class="btn-aut" value="Deletar Carro">
+                </div>
+                <div class="btn-del">
+                    <a href="{% url 'car_detail' pk=object.pk %}" class="btn-aut">Cancelar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+{% endblock %}
+    <footer>
+        Sistema desenvolvido por Bruno Romeu da Silva para PyCodeBr
+    </footer>
+</body>
+</html>

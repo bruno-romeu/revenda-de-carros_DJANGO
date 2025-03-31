@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:Faster;
+    src:url(fontes/FasterOne-Regular.ttf) format(TrueType);
+}
+
+/*
+azul escuro #011627
+vermelho imperial #F71735
+azul clarinho #41EAD4
+branco bebe #FDFFFC
+laranja #FF9F1C
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #011627;
+    border: 0%;
+    margin: 0%;
+}
+
+header{
+    background-color: #F71735;
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.434);
+}
+
+header > h1{
+    font-family: Faster;
+    font-weight: normal;
+    font-size: 50px;
+    padding-top: 0%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header > nav{
+    text-align: start;
+    text-indent: 20px;
+}
+
+.menu{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #FDFFFC;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.menu:hover{
+    position: static;
+    background-color: #720d1a7c;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.user{
+    margin-right: 2vw;
+}
+
+main{
+    background-color: #FDFFFC;
+    margin: 0 20px 0 20px;
+    padding-bottom: 30px;
+    border-radius: 4px 4px 0 0 ;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.385);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+form{
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+form > input{
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    white-space: 50px;
+    text-align: center;
+    width: 500px;
+}
+
+form > button{
+    background-color: #FF9F1C;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #011627;
+    box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.434);
+}
+
+.car-grid > a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0s;
+}
+
+.car-card {
+    margin-top: 15px;
+    margin-right: 2vw;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.car-card > img{
+    object-fit: cover;
+    width: 400px;
+    height: 350px;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.car-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+    transition: 0.5s;
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 30px;
+}
+
+.car-card_detail{
+    margin-top: 15px;
+    margin-right: 2vw;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.car-card_detail > img{
+    width: 800px;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.obj{
+    background-color: rgba(0, 0, 0, 0.181);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-aut{
+    display: block;
+    
+}
+
+.btn-edit{
+    display: inline-flex;
+    background-color: #FF9F1C;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: 1px   ;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+
+}
+.btn-del{
+    display: inline-flex;
+    background-color: #FF9F1C;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: 1px   ;
+    box-shadow: 3px 3px  5px rgba(0, 0, 0, 0.434);
+
+}
+
+.btn-edit > a{
+    text-decoration: none;
+    color: #011627;
+
+}
+
+.btn-del > a{
+    text-decoration: none;
+    color: #011627;
+
+}
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #FF9F1C;
+    font-size: 15px;
+    color: #FDFFFC;
+}

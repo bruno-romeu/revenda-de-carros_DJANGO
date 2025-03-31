@@ -1,0 +1,66 @@
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuários</title>
+    <link rel="stylesheet" href="{% static 'css\styleforms.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>VRUM VRUM CARROS</h1>
+        <p>Desde 2024 movendo os seus sonhos!</p>
+        <nav>
+            {% if user.is_authenticated %}
+                <a class="user">Olá {{user}}!</a>
+                <a class="menu" href="{% url 'new_car' %}">Cadastro de Carros</a>
+            {% endif %} 
+            
+            {% if not user.is_authenticated %}
+                <a class="menu" href="{% url 'register' %}">Registre-se</a>
+                <a class="menu" href="{% url 'login' %}">Login</a>
+            {% endif %}
+
+            <a class="menu" href="{% url 'cars_list' %}">Home</a>
+            <a class="menu" href="#">Fale conosco</a>
+
+            {% if user.is_authenticated %}
+                <a class="menu" href="{% url 'logout' %}">Logout</a>
+            {% endif %}
+
+          
+        </nav>
+    </header>
+
+    
+    <form method="post">
+        {% csrf_token %}
+
+            <div class="form-group">
+                {{ user_form.username.errors}}
+                <p>Usuário: </p>
+                {{ user_form.username }}
+
+                {{ user_form.password1.errors}}
+                <p>Senha: </p>
+                {{ user_form.password1 }}
+
+                {{ user_form.password2.errors}}
+                <p>Confirmar Senha: </p>
+                {{ user_form.password2}}
+            </div>
+
+        <input type="submit" value="Cadastrar" class="btn-primary">
+        
+    </form>
+
+    <footer>
+        Sistema desenvolvido por Bruno Romeu da Silva para PyCodeBr
+    </footer>
+{% endblock %}
+</body>
+</html>
