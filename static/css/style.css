@@ -73,6 +73,7 @@ main{
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    min-height: 80%;
 }
 
 form{

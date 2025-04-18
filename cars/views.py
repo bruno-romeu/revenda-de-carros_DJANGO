@@ -25,7 +25,7 @@ class NewCarCreateView(CreateView):
     model = Car
     form_class = CarModelForm
     template_name = 'new_car.html'
-    success_url = '/home/'
+    success_url = '/carhome/'
 
 
 class CarDetailView(DetailView):
@@ -47,4 +47,4 @@ class CarUpdateView(UpdateView):
 class CarDeleteView(DeleteView):
     model = Car
     template_name = 'car_delete.html'
-    success_url = '/home/'
+    success_url = '/carhome/'
