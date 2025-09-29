@@ -9,10 +9,6 @@ Projeto feito com Django, com os ensinamentos do curso **Django Master** da PyCo
 - [Descrição](#descrição)  
 - [Funcionalidades](#funcionalidades)  
 - [Tecnologias](#tecnologias)  
-- [Instalação e execução](#instalação-e-execução)  
-- [Estrutura de pastas](#estrutura-de-pastas)  
-- [Como contribuir](#como-contribuir)  
-- [Licença](#licença)  
 
 ---
 
