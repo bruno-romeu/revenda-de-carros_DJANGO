@@ -40,8 +40,8 @@ O objetivo principal é servir como projeto de aprendizado do Django, aplicando 
 
 ## Tecnologias
 
-- Python 3.x  
-- Django (versão usada no projeto)  
-- Banco de dados SQLite (por padrão)  
-- HTML / CSS / JavaScript para frontend básico  
+- Python
+- Django
+- Banco de dados SQLite=
+- HTML / CSS para frontend básico  
 - Outras dependências (ver `requirements.txt`)
